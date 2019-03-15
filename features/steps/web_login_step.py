@@ -40,3 +40,7 @@ def step_impl(context, email, senha):
     context.weblogin_page.inserir_email(email)
     context.weblogin_page.inserir_password(senha)
     context.weblogin_page.clicar_entrar()
+
+@step("Valido login fail")
+def step_impl(context):
+    context.weblogin_page.valida_loginError()

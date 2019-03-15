@@ -2,6 +2,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
 
 
 class BasePage:
@@ -41,7 +42,7 @@ class BasePage:
         element.send_keys(text)
 
     def type_in_by_id(self, id, text, set_clear=True):
-        element = self.driver.find_elements_by_id(id)[1]
+        element = self.driver.find_elements_by_id(id)[0]
         if set_clear:
             element.clear()
         element.send_keys(text)
@@ -50,8 +51,10 @@ class BasePage:
         return WebDriverWait(self.driver, time)
 
     def type_with_javascript_by_class_name(self, class_name, index, text):
-        self.driver.execute_script(
-            'document.getElementsByClassName("' + class_name + '")[' + index + '].innerHTML = "' + text + '";')
+        self.driver.execute_script('document.getElementsByClassName("' + class_name + '")[' + index + '].innerHTML = "' + text + '";')
+
+    def type_with_javascript(self, id, index, text):
+        self.driver.execute_script('document.getElementsByID("' + id + '")[' + index + '].innerHTML = "' + text + '";')
 
     def select_in_combo_visible_text(self, locator, value):
         Select(self.wait_for(EC.visibility_of_element_located(locator))).select_by_visible_text(value)
@@ -62,11 +65,16 @@ class BasePage:
     def select_in_combo_visible_by_index(self, locator, value):
         Select(self.wait_for(EC.visibility_of_element_located(locator))).select_by_index(value)
 
-    def elements_by_xpath(self, locator):
-        return self.driver.find_elements_by_xpath(locator)
+    def select_in_combo_by_xpath(self, locator, content):
+        self.click(locator)
+        path = "//div[@value="+"'"+content+"'"+"]"
+        item = self.driver.find_elements_by_xpath(path)
+        item[0].click()
 
     def find_by_id(self, id):
-        return self.driver.find_element_by_id(id)
+        element = self.driver.find_elements_by_id(id)[0]
+        print(element.text())
+        return element
 
     def press_down(self, locator):
         self.find(locator).send_keys(Keys.ARROW_DOWN)

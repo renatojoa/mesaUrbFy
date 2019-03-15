@@ -15,3 +15,7 @@ def step_impl(context):
 @step("Eu inicio a criação de camera")
 def step_impl(context):
     context.webcamera_page.clicar_menuCriarCamera()
+
+@step("Eu inicio uma busca pela camera cadastrada: (?P<nCamera>.+)")
+def step_impl(context, nCamera):
+    context.webcamera_page.realiza_search(nCamera)

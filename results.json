@@ -1,0 +1,299 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario Outline",
+      "location": "features/web_login.feature:83",
+      "name": "Criar Condominio com sucesso -- @1.1 login",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/web_login.feature:63",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/web_login_step.py:12"
+          },
+          "name": "Eu me preparo para acesso a p\u00e1gina de login web pela primeira vez",
+          "result": {
+            "duration": 3.111440658569336,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:64",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/web_login_step.py:18"
+          },
+          "name": "Eu estou na p\u00e1gina de login web",
+          "result": {
+            "duration": 0.09091472625732422,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:65",
+          "match": {
+            "arguments": [
+              {
+                "name": "email",
+                "value": "renatojoa@gmail.com"
+              },
+              {
+                "name": "senha",
+                "value": "oipopo"
+              }
+            ],
+            "location": "features/steps/web_login_step.py:38"
+          },
+          "name": "Eu realizo login com email renatojoa@gmail.com e senha oipopo",
+          "result": {
+            "duration": 0.3929481506347656,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Given",
+          "location": "features/web_login.feature:66",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/web_home_step.py:7"
+          },
+          "name": "Eu me preparo para acesso a p\u00e1gina home",
+          "result": {
+            "duration": 0.0018553733825683594,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:67",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/web_home_step.py:11"
+          },
+          "name": "Eu estou na p\u00e1gina home",
+          "result": {
+            "duration": 3.0007095336914062,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:68",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/web_home_step.py:23"
+          },
+          "name": "Eu clico em condominios",
+          "result": {
+            "duration": 0.10473251342773438,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Given",
+          "location": "features/web_login.feature:69",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/web_condominio_step.py:7"
+          },
+          "name": "Eu me preparo para acesso a p\u00e1gina de condominio",
+          "result": {
+            "duration": 0.0019958019256591797,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:70",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/web_condominio_step.py:11"
+          },
+          "name": "Eu estou na p\u00e1gina de condominio",
+          "result": {
+            "duration": 6.001836061477661,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:71",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/web_condominio_step.py:15"
+          },
+          "name": "Eu inicio a criacao de Condominio",
+          "result": {
+            "duration": 0.08138561248779297,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Given",
+          "location": "features/web_login.feature:72",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/web_condominioCreate_step.py:7"
+          },
+          "name": "Eu me preparo para acesso a p\u00e1gina de criar condominio",
+          "result": {
+            "duration": 0.0009980201721191406,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:73",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/web_condominioCreate_step.py:11"
+          },
+          "name": "Eu estou na p\u00e1gina de criar condominio",
+          "result": {
+            "duration": 6.000157833099365,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:74",
+          "match": {
+            "arguments": [
+              {
+                "name": "nCondominio",
+                "value": "Piedade Life"
+              }
+            ],
+            "location": "features/steps/web_condominioCreate_step.py:15"
+          },
+          "name": "Eu preencho o campo nome do novo condominio com valor Piedade Life",
+          "result": {
+            "duration": 0.1158132553100586,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:75",
+          "match": {
+            "arguments": [
+              {
+                "name": "tCondominio",
+                "value": "Condom\u00ednio Residencial"
+              }
+            ],
+            "location": "features/steps/web_condominioCreate_step.py:19"
+          },
+          "name": "Eu seleciono o tipo de condominio com valor Condom\u00ednio Residencial",
+          "result": {
+            "duration": 0.11567306518554688,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:76",
+          "match": {
+            "arguments": [
+              {
+                "name": "nCondominioAddress",
+                "value": "Rua Amabai, 246"
+              }
+            ],
+            "location": "features/steps/web_condominioCreate_step.py:23"
+          },
+          "name": "Eu preencho o campo de endereco do novo condominio Rua Amabai, 246",
+          "result": {
+            "duration": 0.12092733383178711,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:77",
+          "match": {
+            "arguments": [
+              {
+                "name": "tDiasGravacao",
+                "value": "7 dias"
+              }
+            ],
+            "location": "features/steps/web_condominioCreate_step.py:27"
+          },
+          "name": "Eu seleciono o tipo de dias de grava\u00e7\u00e3o com valor 7 dias",
+          "result": {
+            "duration": 0.1099247932434082,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:78",
+          "match": {
+            "arguments": [
+              {
+                "name": "nImagemCaminho",
+                "value": "C:\\Users\\Renato\\Desktop\\build.jpg"
+              }
+            ],
+            "location": "features/steps/web_condominioCreate_step.py:31"
+          },
+          "name": "Eu preeencho o caminho da imagem do condominio com o valor C:\\Users\\Renato\\Desktop\\build.jpg",
+          "result": {
+            "duration": 0.0012578964233398438,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\Renato\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\Renato\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"features\\steps\\web_condominioCreate_step.py\", line 33, in step_impl",
+              "    context.webcondominioCreate_page.inserir_caminhoImagem(nImagemCaminho)",
+              "  File \"C:\\Users\\Renato\\Documents\\urbfy\\features\\pages\\web_condominioCrate_page.py\", line 33, in inserir_caminhoImagem",
+              "    self.txtImagePath[3].send_keys(caminho)",
+              "IndexError: tuple index out of range"
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/web_login.feature:79",
+          "name": "Eu clico no bot\u00e3o de criar condominio",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "runDebug"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/web_login.feature:1",
+  "name": "Teste no site admin do urbfy",
+  "status": "failed",
+  "tags": []
+}
+]

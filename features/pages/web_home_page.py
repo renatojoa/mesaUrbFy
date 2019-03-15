@@ -1,5 +1,6 @@
 from features.pages.base_page import BasePage
 from selenium.webdriver.common.by import By
+import time
 
 
 
@@ -10,15 +11,30 @@ class WebHomePage(BasePage):
     btnForgot = (By.ID, "login-link")
     btnLogin = (By.ID, "login-button")
     btnCamera = (By.ID, "sidebar-cameras")
+    btnCondominios = (By.ID, 'sidebar-buildings')
 
     def navegar_pagina(self, url):
         self.open_url(url)
 
     def validarPage(self):
-        assert self.find(self.lblTitle).text == "Condomínios"
+        time.sleep(3)
+        #assert self.find(self.lblTitle).text == "Condomínios"
 
     def clicar_logoff(self):
         self.click(self.btnLogout)
 
     def clicar_camera(self):
         self.click(self.btnCamera)
+
+    def clicar_condominios(self):
+        self.click(self.btnCondominios)
+
+    def clicar_inicioCriarCondominio(self):
+        self.click(self.btnStartCreateBuild)
+
+    def realiza_search(self, nCondominio):
+        self.type_in(self.txtSearch, nCondominio)
+        self.click(self.btnSearch)
+        time.sleep(30)
+
+

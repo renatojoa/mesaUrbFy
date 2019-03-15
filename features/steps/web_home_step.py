@@ -19,3 +19,7 @@ def step_impl(context):
 @then("Eu clico em cameras")
 def step_impl(context):
     context.webHome_page.clicar_camera()
+
+@then("Eu clico em condominios")
+def step_impl(context):
+    context.webHome_page.clicar_condominios()
