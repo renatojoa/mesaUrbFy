@@ -75,6 +75,13 @@ class BasePage:
         element = self.driver.find_elements_by_id(id)[0]
         print(element.text())
         return element
+        
+
+    def find_elements_on_cell(self, nome):
+        baseTable = self.driver.find_elements_by_xpath('//*[@id="__layout"]/div/div[3]/div/div[3]/div[2]/div[2]/div[1]/p')
+        x = baseTable.find_elements_by_class_name('text')
+        print(x.text())
+        #print(x.text())
 
     def press_down(self, locator):
         self.find(locator).send_keys(Keys.ARROW_DOWN)

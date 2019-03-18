@@ -25,5 +25,6 @@ class WebCameraPage(BasePage):
     def realiza_search(self, nCamera):
         self.type_in(self.txtSearch, nCamera)
         self.click(self.btnSearch)
-        time.sleep(30)
+        time.sleep(4)
+        self.find_elements_on_cell(nCamera)
 

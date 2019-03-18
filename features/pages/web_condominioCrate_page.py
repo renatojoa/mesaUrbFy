@@ -30,9 +30,7 @@ class WebCondominioCreatePage(BasePage):
         self.select_in_combo_by_xpath(self.selectDaysRecord, dias)
 
     def inserir_caminhoImagem(self, caminho):
-        self.txtImagePath[3].send_keys(caminho)
-        #aaaa = self.driver.execute_script("document.querySelector('#input-file-value').setAttribute('value','sacsasacscsa')")
-        #self.type_with_javascript_by_id(self.txtImagePath, caminho)
+        time.sleep(20)
 
     def clicar_criarCondominio(self):
         self.click(self.btnCreateBuild)
