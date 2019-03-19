@@ -16,7 +16,7 @@
           },
           "name": "Eu me preparo para acesso a p\u00e1gina de login web pela primeira vez",
           "result": {
-            "duration": 3.429039478302002,
+            "duration": 4.366008996963501,
             "status": "passed"
           },
           "step_type": "given"
@@ -30,7 +30,7 @@
           },
           "name": "Eu estou na p\u00e1gina de login web",
           "result": {
-            "duration": 0.07480025291442871,
+            "duration": 0.06283450126647949,
             "status": "passed"
           },
           "step_type": "then"
@@ -53,7 +53,7 @@
           },
           "name": "Eu realizo login com email renatojoa@gmail.com e senha oipopo",
           "result": {
-            "duration": 0.3430812358856201,
+            "duration": 0.41589784622192383,
             "status": "passed"
           },
           "step_type": "then"
@@ -81,7 +81,7 @@
           },
           "name": "Eu estou na p\u00e1gina home",
           "result": {
-            "duration": 3.0020699501037598,
+            "duration": 3.001038074493408,
             "status": "passed"
           },
           "step_type": "then"
@@ -95,7 +95,7 @@
           },
           "name": "Eu clico em cameras",
           "result": {
-            "duration": 0.08638501167297363,
+            "duration": 0.11768865585327148,
             "status": "passed"
           },
           "step_type": "then"
@@ -109,7 +109,7 @@
           },
           "name": "Eu me preparo para acesso a p\u00e1gina de camera",
           "result": {
-            "duration": 0.0009987354278564453,
+            "duration": 0.0009982585906982422,
             "status": "passed"
           },
           "step_type": "given"
@@ -123,7 +123,7 @@
           },
           "name": "Eu estou na p\u00e1gina de camera",
           "result": {
-            "duration": 6.001127243041992,
+            "duration": 6.001183986663818,
             "status": "passed"
           },
           "step_type": "then"
@@ -142,7 +142,7 @@
           },
           "name": "Eu inicio uma busca pela camera cadastrada: Teste 1",
           "result": {
-            "duration": 19.20936107635498,
+            "duration": 4.213124990463257,
             "error_message": [
               "Traceback (most recent call last):",
               "  File \"C:\\Users\\Renato\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\behave\\model.py\", line 1329, in run",
@@ -153,9 +153,9 @@
               "    context.webcamera_page.realiza_search(nCamera)",
               "  File \"C:\\Users\\Renato\\Documents\\urbfy\\features\\pages\\web_camera_page.py\", line 29, in realiza_search",
               "    self.find_elements_on_cell(nCamera)",
-              "  File \"C:\\Users\\Renato\\Documents\\urbfy\\features\\pages\\base_page.py\", line 82, in find_elements_on_cell",
-              "    x = baseTable.find_elements_by_class_name('text')",
-              "AttributeError: 'list' object has no attribute 'find_elements_by_class_name'"
+              "  File \"C:\\Users\\Renato\\Documents\\urbfy\\features\\pages\\base_page.py\", line 83, in find_elements_on_cell",
+              "    print(baseTable.text())",
+              "AttributeError: 'list' object has no attribute 'text'"
             ],
             "status": "failed"
           },
