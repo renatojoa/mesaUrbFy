@@ -25,6 +25,7 @@ class WebCameraPage(BasePage):
     def realiza_search(self, nCamera):
         self.type_in(self.txtSearch, nCamera)
         self.click(self.btnSearch)
-        time.sleep(4)
-        self.find_elements_on_cell(nCamera)
 
+    def valida_inclusao(self, nCamera):
+        print(self.return_elements_on_cell())
+        assert nCamera == self.return_elements_on_cell().text

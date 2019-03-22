@@ -19,3 +19,7 @@ def step_impl(context):
 @step("Eu inicio uma busca pela camera cadastrada: (?P<nCamera>.+)")
 def step_impl(context, nCamera):
     context.webcamera_page.realiza_search(nCamera)
+
+@step("Eu valido a inclusão da camera cadastrada: (?P<nCamera>.+)")
+def step_impl(context, nCamera):
+    context.webcamera_page.valida_inclusao(nCamera)

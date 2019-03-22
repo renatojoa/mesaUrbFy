@@ -12,6 +12,14 @@
             "cwd": "C:\\Users\\Renato\\Documents\\urbfy",
             "args": ["-m", "behave", "--no-capture", "--no-skipped", "--tags=@runDebug"]
         },
+        {
+            "name": "Python: Urbfy Admin",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "cwd": "C:\\Users\\Renato\\Documents\\urbfy",
+            "args": ["-m", "behave", "--no-capture", "--no-skipped", "--tags=@runUrbfyAdmin"]
+        },
 
     ]
 }

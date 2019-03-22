@@ -43,4 +43,4 @@ def step_impl(context, email, senha):
 
 @step("Valido login fail")
 def step_impl(context):
-    context.weblogin_page.valida_loginError()
+    context.weblogin_page.valida_loginError2()

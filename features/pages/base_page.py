@@ -3,6 +3,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
+import time
 
 
 class BasePage:
@@ -75,13 +76,12 @@ class BasePage:
         element = self.driver.find_elements_by_id(id)[0]
         print(element.text())
         return element
-        
 
-    def find_elements_on_cell(self, nome):
-        baseTable = self.driver.find_elements_by_xpath('//*[@id="__layout"]/div/div[3]/div/div[3]/div[2]/div/div[1]/p')
-        
-        print(baseTable.text())
-        #print(x.text())
+    def return_elements_on_cell(self):
+        baseTable = self.driver.find_elements_by_xpath('//*[@class="item"]/div')
+        for item in baseTable:
+            time.sleep(8)
+            return item
 
     def press_down(self, locator):
         self.find(locator).send_keys(Keys.ARROW_DOWN)

@@ -3,41 +3,41 @@
   "elements": [
     {
       "keyword": "Scenario Outline",
-      "location": "features/web_login.feature:47",
-      "name": "Criar Camera com sucesso -- @1.1 login",
+      "location": "features/feature_Admin.feature:25",
+      "name": "Criar Usuario admin com sucesso -- @1.1 login",
       "status": "failed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "features/web_login.feature:31",
+          "location": "features/feature_Admin.feature:5",
           "match": {
             "arguments": [],
             "location": "features/steps/web_login_step.py:12"
           },
           "name": "Eu me preparo para acesso a p\u00e1gina de login web pela primeira vez",
           "result": {
-            "duration": 4.366008996963501,
+            "duration": 5.0516791343688965,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "Then",
-          "location": "features/web_login.feature:32",
+          "location": "features/feature_Admin.feature:6",
           "match": {
             "arguments": [],
             "location": "features/steps/web_login_step.py:18"
           },
           "name": "Eu estou na p\u00e1gina de login web",
           "result": {
-            "duration": 0.06283450126647949,
+            "duration": 0.1200411319732666,
             "status": "passed"
           },
           "step_type": "then"
         },
         {
           "keyword": "Then",
-          "location": "features/web_login.feature:33",
+          "location": "features/feature_Admin.feature:7",
           "match": {
             "arguments": [
               {
@@ -53,130 +53,135 @@
           },
           "name": "Eu realizo login com email renatojoa@gmail.com e senha oipopo",
           "result": {
-            "duration": 0.41589784622192383,
+            "duration": 0.42235660552978516,
             "status": "passed"
           },
           "step_type": "then"
         },
         {
           "keyword": "Given",
-          "location": "features/web_login.feature:34",
+          "location": "features/feature_Admin.feature:8",
           "match": {
             "arguments": [],
             "location": "features/steps/web_home_step.py:7"
           },
           "name": "Eu me preparo para acesso a p\u00e1gina home",
           "result": {
-            "duration": 0.0009989738464355469,
+            "duration": 0.0009975433349609375,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "Then",
-          "location": "features/web_login.feature:35",
+          "location": "features/feature_Admin.feature:9",
           "match": {
             "arguments": [],
             "location": "features/steps/web_home_step.py:11"
           },
           "name": "Eu estou na p\u00e1gina home",
           "result": {
-            "duration": 3.001038074493408,
+            "duration": 3.0007617473602295,
             "status": "passed"
           },
           "step_type": "then"
         },
         {
           "keyword": "Then",
-          "location": "features/web_login.feature:36",
+          "location": "features/feature_Admin.feature:10",
           "match": {
             "arguments": [],
-            "location": "features/steps/web_home_step.py:19"
+            "location": "features/steps/web_home_step.py:27"
           },
-          "name": "Eu clico em cameras",
+          "name": "Eu clico em Adminstradores do urbfy",
           "result": {
-            "duration": 0.11768865585327148,
+            "duration": 0.16727924346923828,
             "status": "passed"
           },
           "step_type": "then"
         },
         {
           "keyword": "Given",
-          "location": "features/web_login.feature:37",
+          "location": "features/feature_Admin.feature:11",
           "match": {
             "arguments": [],
-            "location": "features/steps/web_camera_step.py:7"
+            "location": "features/steps/web_adminUrbfy_step.py:7"
           },
-          "name": "Eu me preparo para acesso a p\u00e1gina de camera",
+          "name": "Eu me preparo para acesso a p\u00e1gina de admin do urbfy",
           "result": {
-            "duration": 0.0009982585906982422,
+            "duration": 0.0006608963012695312,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "Then",
-          "location": "features/web_login.feature:38",
+          "location": "features/feature_Admin.feature:12",
           "match": {
             "arguments": [],
-            "location": "features/steps/web_camera_step.py:11"
+            "location": "features/steps/web_adminUrbfy_step.py:11"
           },
-          "name": "Eu estou na p\u00e1gina de camera",
+          "name": "Eu estou na p\u00e1gina de admin do urbfy",
           "result": {
-            "duration": 6.001183986663818,
+            "duration": 6.001112222671509,
             "status": "passed"
           },
           "step_type": "then"
         },
         {
           "keyword": "Then",
-          "location": "features/web_login.feature:43",
+          "location": "features/feature_Admin.feature:21",
           "match": {
             "arguments": [
               {
-                "name": "nCamera",
-                "value": "Teste 1"
+                "name": "nAdmin",
+                "value": "Seu Edinaldo 2"
               }
             ],
-            "location": "features/steps/web_camera_step.py:19"
+            "location": "features/steps/web_adminUrbfy_step.py:19"
           },
-          "name": "Eu inicio uma busca pela camera cadastrada: Teste 1",
+          "name": "Eu inicio uma busca pelo usuario admin cadastrado: Seu Edinaldo 2",
           "result": {
-            "duration": 4.213124990463257,
+            "duration": 0.15542936325073242,
             "error_message": [
               "Traceback (most recent call last):",
               "  File \"C:\\Users\\Renato\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\behave\\model.py\", line 1329, in run",
               "    match.run(runner.context)",
               "  File \"C:\\Users\\Renato\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\behave\\matchers.py\", line 98, in run",
               "    self.func(context, *args, **kwargs)",
-              "  File \"features\\steps\\web_camera_step.py\", line 21, in step_impl",
-              "    context.webcamera_page.realiza_search(nCamera)",
-              "  File \"C:\\Users\\Renato\\Documents\\urbfy\\features\\pages\\web_camera_page.py\", line 29, in realiza_search",
-              "    self.find_elements_on_cell(nCamera)",
-              "  File \"C:\\Users\\Renato\\Documents\\urbfy\\features\\pages\\base_page.py\", line 83, in find_elements_on_cell",
-              "    print(baseTable.text())",
-              "AttributeError: 'list' object has no attribute 'text'"
+              "  File \"features\\steps\\web_adminUrbfy_step.py\", line 21, in step_impl",
+              "    context.web_adminUrbfy_page.realiza_search(nAdmin)",
+              "  File \"C:\\Users\\Renato\\Documents\\urbfy\\features\\pages\\web_adminUrbfy_page.py\", line 24, in realiza_search",
+              "    self.type_in(self.txtSearch, nAdmin)",
+              "  File \"C:\\Users\\Renato\\Documents\\urbfy\\features\\pages\\base_page.py\", line 42, in type_in",
+              "    element.clear()",
+              "  File \"C:\\Users\\Renato\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 95, in clear",
+              "    self._execute(Command.CLEAR_ELEMENT)",
+              "  File \"C:\\Users\\Renato\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 633, in _execute",
+              "    return self._parent.execute(command, params)",
+              "  File \"C:\\Users\\Renato\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 321, in execute",
+              "    self.error_handler.check_response(response)",
+              "  File \"C:\\Users\\Renato\\AppData\\Local\\Programs\\Python\\Python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response",
+              "    raise exception_class(message, screen, stacktrace)",
+              "selenium.common.exceptions.InvalidElementStateException: Message: invalid element state: Element must be user-editable in order to clear it.",
+              "  (Session info: chrome=73.0.3683.86)",
+              "  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64)",
+              ""
             ],
             "status": "failed"
           },
           "step_type": "then"
-        },
-        {
-          "keyword": "Then",
-          "location": "features/web_login.feature:44",
-          "name": "find_elements_on_cell",
-          "step_type": "then"
         }
       ],
       "tags": [
-        "runDebug"
+        "runUrbfyAdmin"
       ],
       "type": "scenario"
     }
   ],
   "keyword": "Feature",
-  "location": "features/web_login.feature:1",
-  "name": "Teste no site admin do urbfy",
+  "location": "features/feature_Admin.feature:1",
+  "name": "Teste no site admin do urbfy para funcionalidades do Adminstradores do Urbfy",
   "status": "failed",
   "tags": []
 }

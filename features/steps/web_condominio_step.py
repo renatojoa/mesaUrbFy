@@ -12,6 +12,10 @@ def step_impl(context):
 def step_impl(context):
     context.webcondominio_page.validarPage()
 
-@step("Eu inicio a criacao de Condominio")
+@step("Eu inicio a criação de condominio")
 def step_impl(context):
-    context.webcondominio_page.clicar_inicioCriarCondominio()
+    context.webcondominio_page.clicar_menuCriarCondominio()
+
+@step("Eu inicio uma busca pelo condominio cadastrado: (?P<nCondominio>.+)")
+def step_impl(context, nCondominio):
+    context.webcondominio_page.realiza_search(nCondominio)

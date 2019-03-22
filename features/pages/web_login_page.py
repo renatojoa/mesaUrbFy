@@ -12,7 +12,7 @@ class WebLoginPage(BasePage):
     txtPassword = (By.ID, 'password')
     btnForgot = (By.ID, 'login-link')
     btnLogin = (By.ID, 'login-button')
-    lblLoginError = (By.ID, 'email-error-message')
+    lblLoginError2 = (By.XPATH, 'email-error-message')    
 
 
     def navegar_pagina(self, url):
@@ -34,8 +34,11 @@ class WebLoginPage(BasePage):
     def inserir_password(self, password):
         self.type_in(self.txtPassword, password)
 
-    def valida_loginError(self):
-        time.sleep(5)
-        print(self.lblLoginError.text)
+    def valida_loginError2(self):
+        #lblLoginError2 = self.driver.find_elements_by_xpath('//*[@id="email-error-message"]')
+        for unit in self.lblLoginError2:
+            print(unit.text)
+            break
+
 
 

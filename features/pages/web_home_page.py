@@ -11,6 +11,7 @@ class WebHomePage(BasePage):
     btnForgot = (By.ID, "login-link")
     btnLogin = (By.ID, "login-button")
     btnCamera = (By.ID, "sidebar-cameras")
+    btnAdmUsers = (By.ID, "sidebar-admins")
     btnCondominios = (By.ID, 'sidebar-buildings')
 
     def navegar_pagina(self, url):
@@ -32,9 +33,9 @@ class WebHomePage(BasePage):
     def clicar_inicioCriarCondominio(self):
         self.click(self.btnStartCreateBuild)
 
+    def clicar_AdminUrbfy(self):
+        self.click(self.btnAdmUsers)
+
     def realiza_search(self, nCondominio):
         self.type_in(self.txtSearch, nCondominio)
         self.click(self.btnSearch)
-        time.sleep(30)
-
-
