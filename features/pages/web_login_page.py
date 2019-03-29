@@ -12,7 +12,7 @@ class WebLoginPage(BasePage):
     txtPassword = (By.ID, 'password')
     btnForgot = (By.ID, 'login-link')
     btnLogin = (By.ID, 'login-button')
-    lblLoginError2 = (By.XPATH, 'email-error-message')    
+    lblLoginError2 = (By.ID, 'email-error-message')    
 
 
     def navegar_pagina(self, url):
@@ -20,7 +20,7 @@ class WebLoginPage(BasePage):
 
     def validarPage(self):
         print(self.find(self.lblTitle).text)
-        assert self.find(self.lblTitle).text == 'Olá, seja bem-vindo!'
+        assert self.return_text(self.lblTitle) == 'Olá, seja bem-vindo!'
 
     def clicar_entrar(self):
         self.click(self.btnLogin)
@@ -35,10 +35,4 @@ class WebLoginPage(BasePage):
         self.type_in(self.txtPassword, password)
 
     def valida_loginError2(self):
-        #lblLoginError2 = self.driver.find_elements_by_xpath('//*[@id="email-error-message"]')
-        for unit in self.lblLoginError2:
-            print(unit.text)
-            break
-
-
-
+        assert self.return_text(self.lblLoginError2) == '* E-mail ou senha incorretos'

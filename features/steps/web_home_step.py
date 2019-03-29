@@ -24,6 +24,10 @@ def step_impl(context):
 def step_impl(context):
     context.webHome_page.clicar_condominios()
 
+@then("Eu clico em usuarios")
+def step_impl(context):
+    context.webHome_page.clicar_usuario()
+
 @then("Eu clico em Adminstradores do urbfy")
 def step_impl(context):
     context.webHome_page.clicar_AdminUrbfy()

@@ -77,11 +77,15 @@ class BasePage:
         print(element.text())
         return element
 
-    def return_elements_on_cell(self):
+    def return_elements_on_cell(self, expected):
         baseTable = self.driver.find_elements_by_xpath('//*[@class="item"]/div')
         for item in baseTable:
             time.sleep(8)
-            return item
+            if item.text == expected:
+                return item
+
+    def return_text(self, locator):
+        return self.find(locator).text
 
     def press_down(self, locator):
         self.find(locator).send_keys(Keys.ARROW_DOWN)

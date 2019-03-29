@@ -5,21 +5,44 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Behave",
+            "name": "Login",
             "type": "python",
             "request": "launch",
             "console": "integratedTerminal",
             "cwd": "C:\\Users\\Renato\\Documents\\urbfy",
-            "args": ["-m", "behave", "--no-capture", "--no-skipped", "--tags=@runDebug"]
+            "args": ["-m", "behave", "--no-capture", "--no-skipped", "--tags=@runLogin"]
         },
         {
-            "name": "Python: Urbfy Admin",
+            "name": "Camera",
             "type": "python",
             "request": "launch",
             "console": "integratedTerminal",
             "cwd": "C:\\Users\\Renato\\Documents\\urbfy",
-            "args": ["-m", "behave", "--no-capture", "--no-skipped", "--tags=@runUrbfyAdmin"]
+            "args": ["-m", "behave", "--no-capture", "--no-skipped", "--tags=@runCamera"]
         },
-
+        {
+            "name": "Condominio",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "cwd": "C:\\Users\\Renato\\Documents\\urbfy",
+            "args": ["-m", "behave", "--no-capture", "--no-skipped", "--tags=@runCondominio"]
+        },
+        {
+            "name": "Admin",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "cwd": "C:\\Users\\Renato\\Documents\\urbfy",
+            "args": ["-m", "behave", "--no-capture", "--no-skipped", "--tags=@runAdmin"]
+        },
+        {
+            "name": "User",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "cwd": "C:\\Users\\Renato\\Documents\\urbfy",
+            "args": ["-m", "behave", "--no-capture", "--no-skipped", "--tags=@runUser"]
+        },
     ]
 }

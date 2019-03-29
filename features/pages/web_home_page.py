@@ -13,6 +13,7 @@ class WebHomePage(BasePage):
     btnCamera = (By.ID, "sidebar-cameras")
     btnAdmUsers = (By.ID, "sidebar-admins")
     btnCondominios = (By.ID, 'sidebar-buildings')
+    btnUsers = (By.ID, 'sidebar-users')
 
     def navegar_pagina(self, url):
         self.open_url(url)
@@ -35,6 +36,9 @@ class WebHomePage(BasePage):
 
     def clicar_AdminUrbfy(self):
         self.click(self.btnAdmUsers)
+
+    def clicar_usuario(self):
+        self.click(self.btnUsers)
 
     def realiza_search(self, nCondominio):
         self.type_in(self.txtSearch, nCondominio)
