@@ -30,12 +30,16 @@
     Submit request to obtain: 
     
     >    1.2 Status code: 200
+            http://api.openweathermap.org/data/2.5/weather?q=London&appid=bbee494935c2d1479dfc8b2e5658791b&units=metric
     
     >    1.3 Status code: 400
+            http://api.openweathermap.org/data/2.5/weather?q=&appid=bbee494935c2d1479dfc8b2e5658791b
     
     >    1.4 Status code: 401
+            http://api.openweathermap.org/data/2.5/weatherLondon&units=metric
     
     >    1.5 Status code: 404
+            http://api.openweathermap.org/data/2.5/weather?q=RenatoLivingInSaragoza&appid=bbee494935c2d1479dfc8b2e5658791b&units=metric
 
 2. what should weatherCheck.feature do:
     Submit request to obtain:
