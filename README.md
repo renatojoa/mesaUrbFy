@@ -57,11 +57,11 @@
 
 >  Given the constant weather changes, I extremely recommend a variables (example) update on feature file for a better experience.
 
-*
+
 
 > In the feature file, all most every step is committed. With alternate steps between the others features to avoid too many variable changes. but be free to change or uncommitted line of code.
 
-*
+
 
 > I'm adding a link to each request above to check values. be free to debug and to check sometimes diferrences in temperature/wind speed/etc. the request link inform a diferent value then api request (this values are print on console).
 
