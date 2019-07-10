@@ -27,14 +27,19 @@
 
 ## Example:
 1. what should eventStatus.feature do:
-    > Submit request to obtain: 
+    Submit request to obtain: 
+    
     >    1.2 Status code: 200
+    
     >    1.3 Status code: 400
+    
     >    1.4 Status code: 401
+    
     >    1.5 Status code: 404
 
 2. what should weatherCheck.feature do:
-    > Submit request to obtain: 
+    Submit request to obtain:
+    
     >    2.1 Check weather in using city param
     >           http://api.openweathermap.org/data/2.5/weather?q=Zaragoza&appid=bbee494935c2d1479dfc8b2e5658791b&units=metric
     
